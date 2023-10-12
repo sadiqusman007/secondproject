@@ -1,0 +1,450 @@
+.banner_section{
+    background-image: url('../../images/home/banner/bg_banner.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 335px;
+}
+
+.banner_grid{
+    width:100%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+    padding: 25px 0px;
+}
+
+.banner_left{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    line-height: 35px;
+}
+
+.banner_left h3{
+    background:#058B8C;
+    width:115px;
+    border-radius: 30px;
+    color:#ffffff;
+    font-size:14px;
+    font-weight:500;
+    padding: 5px 10px;
+}
+
+.banner_left h2{
+    color:#1E1E1E;
+    font-size:60px;
+    font-weight:400;
+}
+
+.banner_left h1{
+    color:#1E1E1E;
+    font-size:45px;
+    font-weight:700;
+}
+
+h1 span{
+    color:#058B8C;
+    font-size:55px;
+    font-weight:700;
+}
+
+.banner_left p{
+    color:#1E1E1E;
+    font-size:20px;
+    font-weight:400;
+    line-height:27px;
+}
+
+.btn_button{
+    display:flex;
+    flex-direction: row;
+    gap:25px;
+}
+
+.btn_button a{
+    text-decoration: none;
+    color:#1E1E1E;
+    font-size: 16px;
+    font-weight:500;
+    text-transform: uppercase;
+    border: 2px solid #1E1E1E;
+    border-radius: 25px;
+    padding:10px 30px;
+}
+
+.btn_button a:hover{
+    color:#ffffff;
+    background-color:#8D0F11;
+    border: none;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.20), 3px 4px 10px 0px rgba(0, 0, 0, 0.20) inset;
+}
+
+.banner_img{
+    width:375px;
+    float: right;
+    background-image: url('../../images/home/banner/bg_banner_right.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 300px;
+}
+
+.banner_img img{
+    width:100%;
+    border-radius:185px;
+    padding-left:25px;
+}
+
+.after_banner_grid{
+    width:100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+}
+
+.after_banner_inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    align-items: center;
+}
+
+.after_banner_img{
+    width:150px;
+    height:150px;
+}
+
+.after_banner_img img{
+    width:100%;
+    padding:25px;
+    border-radius: 25px;
+    background: #f8f8f8;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.00);
+}
+
+.after_banner_inner h2{
+    font-size:24px;
+    font-weight:600;
+}
+
+/*Expolore components */
+.expolore_components{
+    padding: 10px 0px;
+}
+
+.expolore_header h2{
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.expolore_header h2 span{
+    color: #058B8C;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.expolore_services{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:16px;
+
+}
+
+.service_card{
+    width:100%;
+    height:350px;
+    border-radius: 30px;
+    position:relative;
+}
+
+.service_card img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:30px;
+}
+
+.service_card .overlay{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 16.85%, #FFF 73.55%);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.service_card .overlay h2{
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    margin-bottom: 1rem;
+}
+
+.service_card .overlay button{
+    border-radius: 48px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 10px 20px;
+    display: none;
+}
+
+/*over lay effect */
+
+.service_card .overlay:hover{
+    background: rgba(30, 30, 30, 0.6);
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.service_card .overlay:hover h2{
+    color:#ffffff;
+ }
+
+ .service_card .overlay:hover button{
+    display: block;
+ }
+
+/*who are we */
+
+.title h2{
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    margin-top: 74px;
+}
+
+.title h2 span{
+    color: #058B8C;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.8px;
+
+}
+
+.whowe_are{
+    padding: 2rem 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.whowe_are .left_hand{
+    padding: 3rem;
+    width:100%;
+    background-image: url("../../images/home/whoweare/bg_whoweare.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.whowe_are .left_hand img{
+    width:100%;
+    border-radius:50%;
+}
+
+.whowe_are .right_hand {
+    width:100%;
+    padding: 2rem;
+}
+
+.whowe_are .right_hand .right_hand_text p{
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 194.444% */
+    margin-top:34px;
+}
+
+.lefthand_side{
+    background-color: #058B8C;
+    width:100%;
+}
+
+.lefthand_side h2{
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    margin-top:24px
+}
+
+.whoweare{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #058B8C;
+    width:1296px;
+    height:640px;
+}
+
+.whoweare .whoweare_left{
+    width:100%;
+}
+
+.whoweare .whoweare_left h2{
+    color: #ffffff;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    padding: 3rem;
+   }
+
+.whoweare .whoweare_left h2 span{
+    color: #ffffff;
+    font-family: Rubik;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.whoweare .whoweare_left .whoweare_left_text p{
+    color: #ffffff;
+    font-family: Rubik;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 194.444% */
+    padding-left: 2rem;
+    margin-top: 28px;
+}
+
+.whoweare .whoweare_right{
+    padding: 3rem;
+    width:100%;
+    background-image: url("../../images/home/whoweare/bg_whoweare.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.whoweare .whoweare_right img{
+    width:100%;
+    border-radius:50%;
+}
+
+/*Our client*/
+
+.ourclient{
+    padding: 3rem 10px;
+}
+
+.ourclient .top_part{
+    text-align: center;
+}
+
+.ourclient .top_part p{
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+/* Our client*/
+
+.client_rev{
+    padding: 2rem 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+}
+
+.client_rev .client_card{
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    padding:30px;
+}
+
+.client_rev .revcard_textarea p{
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+}
+
+.client_rev .revcard_topsection{
+    display: flex;
+    align-items: center;
+}
+
+.client_rev .revcard_topsection img{
+    width:90px;
+    width:90px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.client_rev .revcard_topsection .text_part h2{
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px; /* 136.364% */
+    
+}
+
+.client_rev .revcard_topsection .text_part .star_part{
+    width:100%;
+    display:flex; 
+    justify-content: space-between;
+}
+
+.client_rev .revcard_topsection .text_part{
+    width:75%;
+}
+
+.client_rev .revcard_topsection .text_part .star_part p{
+    color: #1E1E1E;
+    font-family: Rubik; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 225% */
+}
